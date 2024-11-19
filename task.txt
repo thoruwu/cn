@@ -1,0 +1,8 @@
+subnetting
+dynamic routing -> RIP, OSPF
+vlan, access two vlans using router on a stick
+static routing
+wlan
+dhcp
+web server
+dns

@@ -1,0 +1,29 @@
+--- how to create vlan ---
+en -> enable 
+conf t -> configure terminal
+vlan 10 -> create vlan 10
+name vlan10 -> name vlan10
+exit -> exit
+
+show vlan brief -> show vlan brief
+
+--- how to assign vlan to port ----
+int fa0/1 
+switchport mode access
+switchport access vlan 10
+
+
+--- router on a stick ---
+show interfaces trunk 
+int range fa0/1 - 3
+switchport mode trunk
+
+int fa0/1.10
+encapsulation dot1q 10
+ip address
+no shutdown
+
+int fa0/1.20
+encapsulation dot1q 20
+ip address
+no shutdown

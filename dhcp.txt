@@ -1,0 +1,4 @@
+
+---  for DHCP relay on Cisco router ---
+interface fa0/0
+ip helper-address [DHCP-server-IP-address]
